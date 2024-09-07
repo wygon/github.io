@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lilia Nails - Pazyyyyyy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="shortcut icon" href="img/igg.png"> 
+</head>
+<body>
+    <button class="open-nav" onclick="toggleNav()" data-aos="fade-right">☰</button>
+    <nav id="sidenav">
+        <button class="close-nav" onclick="toggleNav()">×</button>
+        <ul>
+            <li><a href="index.html">Strona główna</a></li>
+            <li><a href="rejestracja.html">Zapisy</a></li>
+            <li><a href="certyfikaty.html">Certyfikaty</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div class="container" data-aos="fade-up">
+            <h1>Lilia Nails</h1>
+            <p>Stylizacja paznokci z pasją i profesjonalizmem</p>
+        </div>
+    </header>
+
+    <section id="about" data-aos="fade-up">
+        <div class="container">
+            <h2>O mnie</h2>
+            <p>Cześć, nazywam się Lilia. Zajmuję się stylizacją paznokci od 5 lat. Moja praca to moja pasja – każda klientka jest dla mnie wyjątkowa, a jej zadowolenie to mój priorytet. Wykorzystuję najwyższej jakości produkty i dbam o każdy detal, aby Twoje paznokcie wyglądały perfekcyjnie.</p>
+        </div>
+        
+    </section>
+
+    <section id="gallery" data-aos="fade-up">
+        <div class="container">
+            <h2 style="font-size: 2.5rem; margin-top: -20px;">Galeria</h2>
+            <div class="gallery">
+                <img src="img/photo1.png" alt="Stylizacja 1" class="zoom-img">
+                <img src="img/photo2.png" alt="Stylizacja 2" class="zoom-img">
+                <img src="img/photo3.png" alt="Stylizacja 3" class="zoom-img">
+                <img src="img/photo4.jpg" alt="Stylizacja 4" class="zoom-img">
+                <img src="img/photo5.png" alt="Stylizacja 5" class="zoom-img">
+                <img src="img/photo6.png" alt="Stylizacja 6" class="zoom-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- <section id="contact">
+        <div class="container">
+            <h2>Kontakt</h2>
+            <p>Masz pytania lub chcesz umówić się na wizytę? Skontaktuj się ze mną!</p>
+            <ul>
+                <li>Email: <a href="mailto:lilia@example.com">lilia@example.com</a></li>
+                <li>Telefon: <a href="tel:+48123456789">+48 123 456 789</a></li>
+                <li>Instagram: <a href="https://instagram.com/_lilianails__">@_lilianails__</a></li>
+            </ul>
+        </div>
+    </section> -->
+
+    <!-- Stopka z ikonami społecznościowymi -->
+    <footer data-aos="fade-up">
+        <p>Znajdź mnie na:</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/_lilianails__" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2024 Lilia Nails. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+
+    <!-- Latająca wyspa z reklamą Instagrama -->
+    <div id="floating-island" >
+        <a href="https://instagram.com/_lilianails__" target="_blank">
+            <img src="img/ig.jpg" alt="Instagram">
+            <p>Sprawdź mnie na Instagramie!</p>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 700,
+        });
+    </script>
+</body>
+</html>

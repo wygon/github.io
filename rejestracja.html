@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lilia Nails - Rezerwacja</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="shortcut icon" href="img/igg.png"> 
+</head>
+<body>
+    <button class="open-nav" onclick="toggleNav()" data-aos="fade-right">☰</button>
+    <nav id="sidenav">
+        <button class="close-nav" onclick="toggleNav()">×</button>
+        <ul>
+            <li><a href="index.html">Strona główna</a></li>
+            <li><a href="rejestracja.html">Zapisy</a></li>
+            <li><a href="certyfikaty.html">Certyfikaty</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div class="container" data-aos="fade-up">
+            <h1>Lilia Nails</h1>
+            <p>Stylizacja paznokci z pasją i profesjonalizmem</p>
+        </div>
+    </header>
+    <section id="booking" data-aos="fade-up">
+        <h2>Rezerwacja Online</h2>
+        <form id="booking-form">
+            <label for="name">Imię i nazwisko:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="date">Data:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="time">Godzina:</label>
+            <input type="time" id="time" name="time" required>
+            
+            <label for="service">Usługa:</label>
+            <select id="service" name="service" required>
+                <option value="manicure">Manicure</option>
+                <option value="pedicure">Pedicure</option>
+                <option value="gel">Żel</option>
+                <option value="hybryda">Hybryda</option>
+                <option value="lego">Skladanie lego</option>
+                <option value="miki">Zabawa z pieskiem</option>
+            </select>
+            
+            <button type="submit">Zarezerwuj</button>
+        </form>
+    </section>
+    
+
+    <footer data-aos="fade-up">
+        <p>Znajdź mnie na:</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/_lilianails__" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+        <p>&copy; 2024 Lilia Nails. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+
+    <!-- Latająca wyspa z reklamą Instagrama -->
+    <div id="floating-island">
+        <a href="https://instagram.com/_lilianails__" target="_blank">
+            <img src="img/ig.jpg" alt="Instagram">
+            <p>Sprawdź mnie na Instagramie!</p>
+        </a>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 700,
+        });
+    </script>
+</body>
+</html>
